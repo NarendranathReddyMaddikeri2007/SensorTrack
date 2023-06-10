@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/dark9"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/sensor_title_sensorlist_item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/sensor_description_sensorlist_item_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sensor description"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

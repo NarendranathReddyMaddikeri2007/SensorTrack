@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="light_sensor_home">Effects of light on health, plants and energy consumption</string>
+    <string name="navigation_drawer_open">OPEN NAVIGATION DRAWER</string>
+    <string name="navigation_drawer_close">CLOSE NAVIGATION DRWAER</string>
+</resources>

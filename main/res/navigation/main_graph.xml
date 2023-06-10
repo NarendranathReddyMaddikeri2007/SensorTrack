@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/homeFragment3"
+        android:name="com.sensorconnect.sensortrack.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment3_to_soundFragment2"
+            app:destination="@id/soundFragment2" />
+        <action
+            android:id="@+id/action_homeFragment3_to_compassFragment"
+            app:destination="@id/compassFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_sensorsListFragment"
+            app:destination="@id/sensorsListFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_lightFragment"
+            app:destination="@id/lightFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_temperatureFragment"
+            app:destination="@id/temperatureFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_heartRateFragment"
+            app:destination="@id/heartRateFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_stepsTargetFragment"
+            app:destination="@id/stepsTargetFragment" />
+        <action
+            android:id="@+id/action_homeFragment3_to_ballGameFragment"
+            app:destination="@id/ballGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/soundFragment2"
+        android:name="com.sensorconnect.sensortrack.Fragments.SOSFragment"
+        android:label="fragment_sound"
+        tools:layout="@layout/fragment_sos" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_homeFragment3"
+            app:destination="@id/homeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/sensorsListFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.SensorsListFragment"
+        android:label="fragment_sensors_list"
+        tools:layout="@layout/fragment_sensors_list" />
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.LightFragment"
+        android:label="fragment_light"
+        tools:layout="@layout/fragment_light" />
+    <fragment
+        android:id="@+id/temperatureFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.MetalsFragment"
+        android:label="fragment_temperature"
+        tools:layout="@layout/fragment_metals" />
+    <fragment
+        android:id="@+id/heartRateFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.HeartRateFragment"
+        android:label="fragment_heart_rate"
+        tools:layout="@layout/fragment_heart_rate" />
+    <fragment
+        android:id="@+id/stepsTargetFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.StepsTargetFragment"
+        android:label="fragment_steps_target"
+        tools:layout="@layout/fragment_steps_target" />
+    <fragment
+        android:id="@+id/ballGameFragment"
+        android:name="com.sensorconnect.sensortrack.Fragments.BallGameFragment"
+        android:label="fragment_ball_game"
+        tools:layout="@layout/fragment_ball_game" />
+</navigation>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark7"
+    android:orientation="vertical"
+    tools:context=".Fragments.LightFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar_fragment_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Light Sensor"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fragment_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/review_on_range_fragment_light"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar_fragment_light"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="For Health"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/health_effects_review_fragment_light_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REVIEW ON HEALTH"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/review_on_range_fragment_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:text="REVIEW"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@id/progressBar"
+        android:padding="15dp"
+        />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:max="360"
+        android:progressBackgroundTint="@color/dark9" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="LIGHT SENSOR VALUE"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout2_fragment_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/progressBar"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Energy Consumption"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/energy_consumption_effects_review_fragment_light_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Energy Consumption"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:paddingStart="20dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark7"
+    tools:context=".Fragments.HeartRateFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar_fragment_heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark9"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Heart Rate Sensor"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_fragment_light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@id/progressBar_fragment_heart_rate_pb"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbar_fragment_heart_rate"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REVIEW"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/review_fragment_heart_rate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REVIEW ON HEALTH"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRECAUTIONS"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            />
+        <TextView
+            android:id="@+id/precautions_fragment_heart_rate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="For Energy Consumption"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            />
+
+    </LinearLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar_fragment_heart_rate_pb"
+        style="@style/CircularDeterminateProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:max="360"
+        android:progressBackgroundTint="@color/dark9" />
+
+    <TextView
+        android:id="@+id/value_heart_rate_fragment_heart_rate_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="HEART RATE VALUE"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
